@@ -1,3 +1,5 @@
+import numpy as np
+
 def NPV(C, r):
     return sum(C / (1 + r) ** np.arange(len(C)))
 
