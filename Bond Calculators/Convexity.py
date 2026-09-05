@@ -10,8 +10,6 @@ def convexity(P, C = 0, r = 0, y = 0, f = 1, s = 1):
         l.append(P * (C / (r + s * n / 100) * (1 - d) + d))
 
     # Convexity
-    result = round((l[0] + l[2] - 2 * l[1]) / l[1] / (s / 100) ** 2,2)
-    return result
+    return round((l[0] + l[2] - 2 * l[1]) / l[1] / (s / 100) ** 2,2)
 
-convexity_result = convexity(P=1000, C=0.1, r=0.05, y=3, f=1, s=1) # Test
-print(convexity_result)
+convexity(P=1000, C=0.1, r=0.05, y=3, f=1, s=1) # Test
